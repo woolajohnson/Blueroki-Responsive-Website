@@ -1,5 +1,7 @@
-$primaryColor: blue;
+$primaryColor: #047aed;
 $whiteColor: #fff;
+$darkColor: #333;
+
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +10,7 @@ $whiteColor: #fff;
 
 html {
     font-family: 'Lato', sans-serif;
+    line-height: 1.6;
 }
 
 a {
@@ -20,3 +23,4 @@ li {
 }
 
 @import "./header";
+@import "./showcase";
