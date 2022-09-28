@@ -1,0 +1,22 @@
+$primaryColor: blue;
+$whiteColor: #fff;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: $whiteColor;
+}
+
+li {
+    list-style: none;
+}
+
+@import "./header";
