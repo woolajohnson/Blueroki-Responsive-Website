@@ -51,6 +51,7 @@ li {
   height: 400px;
   background-color: #047aed;
   color: #fff;
+  position: relative;
 }
 .showcase .container {
   max-width: 1100px;
@@ -84,6 +85,7 @@ li {
 }
 .showcase .container .card-section {
   overflow: visible;
+  z-index: 100;
 }
 .showcase .container .card-section .card {
   color: #333;
@@ -117,4 +119,19 @@ li {
   background-color: #047aed;
   margin-top: 20px;
   padding: 10px 20px;
+}
+.showcase .container .card-section .card input[type=submit]:hover {
+  transform: scale(0.98);
+}
+
+.showcase::before,
+.showcase::after {
+  content: "";
+  position: absolute;
+  height: 100px;
+  bottom: -70px;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+  transform: skewY(-3deg);
 }/*# sourceMappingURL=style.css.map */

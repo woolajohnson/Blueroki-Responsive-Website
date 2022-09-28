@@ -2,6 +2,7 @@
     height: 400px;
     background-color: $primaryColor;
     color: $whiteColor;
+    position: relative;
     .container {
         max-width: 1100px;
         margin: 0 auto;
@@ -33,6 +34,7 @@
         }
         .card-section {
             overflow: visible;
+            z-index: 100;
             .card {
                 color: $darkColor;
                 padding: 40px;
@@ -65,8 +67,26 @@
                     margin-top: 20px;
                     padding: 10px 20px;
                 }
+                input[type=submit]:hover {
+                    transform: scale(0.98);
+                }
             }
         }
         
+        
     }
+    
+    
+}
+.showcase::before,
+.showcase::after {
+    content: '';
+    position: absolute;
+    height: 100px;
+    bottom: -70px;
+    right: 0;
+    left: 0;
+    background-color: $whiteColor;
+    // opacity: 0.1;
+    transform: skewY(-3deg);
 }
