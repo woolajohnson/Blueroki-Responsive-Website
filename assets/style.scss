@@ -11,6 +11,7 @@ $darkColor: #333;
 html {
     font-family: 'Lato', sans-serif;
     line-height: 1.6;
+    color: $darkColor;
 }
 
 a {
@@ -24,3 +25,5 @@ li {
 
 @import "./header";
 @import "./showcase";
+@import "./stats";
+@import "./cli";

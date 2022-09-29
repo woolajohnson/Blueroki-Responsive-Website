@@ -7,6 +7,7 @@
 html {
   font-family: "Lato", sans-serif;
   line-height: 1.6;
+  color: #333;
 }
 
 a {
@@ -134,4 +135,67 @@ li {
   left: 0;
   background-color: #fff;
   transform: skewY(-3deg);
+}
+
+.stats {
+  margin-top: 100px;
+  width: 100%;
+}
+.stats .container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+.stats .container .stats-text {
+  max-width: 500px;
+  text-align: center;
+  margin: 0 auto;
+}
+.stats .container .stats-text p {
+  font-size: 20px;
+}
+.stats .container .stats-icon {
+  margin-top: 30px;
+  padding: 10px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.stats .container .stats-icon .stats-box {
+  cursor: pointer;
+}
+.stats .container .stats-icon .stats-box h3 {
+  font-size: 30px;
+}
+.stats .container .stats-icon .stats-box p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #047aed;
+}
+.stats .container .stats-icon .stats-box > * {
+  padding-bottom: 5px;
+}
+
+.cli .container {
+  max-width: 1090px;
+  margin: 20px auto;
+  padding: 20px;
+  gap: 10px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+.cli .container img {
+  width: 100%;
+  grid-column: 1/span 2;
+  grid-row: 1/span 2;
+}
+.cli .container p {
+  padding: 15px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
 }/*# sourceMappingURL=style.css.map */

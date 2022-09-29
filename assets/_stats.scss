@@ -1,0 +1,40 @@
+.stats {
+    margin-top: 100px;
+    width: 100%;
+    .container {
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding-top: 10px;
+        .stats-text {
+            max-width: 500px;
+            text-align: center;
+            margin: 0 auto;
+            p {
+                font-size: 20px;
+            }
+        }
+        .stats-icon {
+            margin-top: 30px;
+            padding: 10px;
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            .stats-box {
+                cursor: pointer;
+                h3 {
+                    font-size: 30px;
+                }
+                p {
+                    font-size: 18px;
+                    font-weight: bold;
+                    color: $primaryColor;
+                }
+                
+            }
+            .stats-box > *{
+                padding-bottom: 5px;
+            }
+        }
+    }
+}
