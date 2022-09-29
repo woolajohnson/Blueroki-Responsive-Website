@@ -1,0 +1,32 @@
+.cloud {
+    background-color: $primaryColor;
+    color: $whiteColor;
+    .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        display: grid;
+        padding: 20px;
+        text-align: center;
+        align-items: center;
+        grid-template-columns: 4fr 3fr;
+        h2 {
+            font-size: 40px;
+        }
+        p {
+            margin: 10px 0;
+        }
+        a {
+            display: inline-block;
+            background-color: $darkColor;
+            padding: 10px 30px;
+            margin-top: 10px;
+            border-radius: 5px;
+            &:hover {
+                transform: scale(0.98);
+            }
+        }
+        img {
+            width: 100%;
+        }
+    }
+}
